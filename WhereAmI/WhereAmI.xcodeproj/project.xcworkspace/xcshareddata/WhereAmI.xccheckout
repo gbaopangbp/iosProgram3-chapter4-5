@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>040D7FF5-9995-4F9F-9D4C-D6A2E5F7C705</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WhereAmI</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A32D6EB-A7E6-46C8-A49C-C83B4EFB5433</key>
+		<string>ssh://github.com/gbaopangbp/iosProgram3-chapter4-5.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WhereAmI/WhereAmI.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A32D6EB-A7E6-46C8-A49C-C83B4EFB5433</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/gbaopangbp/iosProgram3-chapter4-5.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A32D6EB-A7E6-46C8-A49C-C83B4EFB5433</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A32D6EB-A7E6-46C8-A49C-C83B4EFB5433</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosProgram3-chapter4-5</string>
+		</dict>
+	</array>
+</dict>
+</plist>
