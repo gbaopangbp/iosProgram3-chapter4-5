@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface WhereViewController : UIViewController<CLLocationManagerDelegate>
+@interface WhereViewController : UIViewController<UITextFieldDelegate,MKMapViewDelegate,CLLocationManagerDelegate>
 
 - (void)locationManager:(CLLocationManager *)manager
 	didUpdateToLocation:(CLLocation *)newLocation
 		   fromLocation:(CLLocation *)oldLocation;
+
+//- (void)mapViewDidFinishLoadingMap:(MKMapView *)mapView;
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation;
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
+
+
+
 
 @end

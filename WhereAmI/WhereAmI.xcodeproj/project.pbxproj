@@ -23,6 +23,7 @@
 		46764B251A4F93F200F0859C /* WhereAmITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46764B241A4F93F200F0859C /* WhereAmITests.m */; };
 		46764B2F1A4F947000F0859C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46764B2E1A4F947000F0859C /* CoreLocation.framework */; };
 		46764B311A4F947B00F0859C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46764B301A4F947B00F0859C /* MapKit.framework */; };
+		46764B341A4FA43E00F0859C /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 46764B331A4FA43E00F0859C /* BNRMapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		46764B241A4F93F200F0859C /* WhereAmITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereAmITests.m; sourceTree = "<group>"; };
 		46764B2E1A4F947000F0859C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		46764B301A4F947B00F0859C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		46764B321A4FA43E00F0859C /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
+		46764B331A4FA43E00F0859C /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				46764B0F1A4F93F200F0859C /* WhereViewController.m */,
 				46764B111A4F93F200F0859C /* Images.xcassets */,
 				46764B001A4F93F200F0859C /* Supporting Files */,
+				46764B321A4FA43E00F0859C /* BNRMapPoint.h */,
+				46764B331A4FA43E00F0859C /* BNRMapPoint.m */,
 			);
 			path = WhereAmI;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			files = (
 				46764B0A1A4F93F200F0859C /* WhereAppDelegate.m in Sources */,
 				46764B101A4F93F200F0859C /* WhereViewController.m in Sources */,
+				46764B341A4FA43E00F0859C /* BNRMapPoint.m in Sources */,
 				46764B061A4F93F200F0859C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
