@@ -24,6 +24,7 @@
 		46764B2F1A4F947000F0859C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46764B2E1A4F947000F0859C /* CoreLocation.framework */; };
 		46764B311A4F947B00F0859C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46764B301A4F947B00F0859C /* MapKit.framework */; };
 		46764B341A4FA43E00F0859C /* BNRMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 46764B331A4FA43E00F0859C /* BNRMapPoint.m */; };
+		46FAAF091A7636B200148D84 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 46FAAF081A7636B200148D84 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		46764B301A4F947B00F0859C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		46764B321A4FA43E00F0859C /* BNRMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRMapPoint.h; sourceTree = "<group>"; };
 		46764B331A4FA43E00F0859C /* BNRMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRMapPoint.m; sourceTree = "<group>"; };
+		46FAAF081A7636B200148D84 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		46764AED1A4F93F200F0859C = {
 			isa = PBXGroup;
 			children = (
+				46FAAF081A7636B200148D84 /* Settings.bundle */,
 				46764AFF1A4F93F200F0859C /* WhereAmI */,
 				46764B1E1A4F93F200F0859C /* WhereAmITests */,
 				46764AF81A4F93F200F0859C /* Frameworks */,
@@ -242,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FAAF091A7636B200148D84 /* Settings.bundle in Resources */,
 				46764B121A4F93F200F0859C /* Images.xcassets in Resources */,
 				46764B041A4F93F200F0859C /* InfoPlist.strings in Resources */,
 				46764B0D1A4F93F200F0859C /* Main.storyboard in Resources */,
@@ -471,6 +475,7 @@
 				46764B2A1A4F93F200F0859C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46764B2B1A4F93F200F0859C /* Build configuration list for PBXNativeTarget "WhereAmITests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +484,7 @@
 				46764B2D1A4F93F200F0859C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

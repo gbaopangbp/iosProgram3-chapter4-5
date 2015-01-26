@@ -24,6 +24,16 @@
 
 #define MAP_TYPE @"mapDefineType"
 
+
+//类的初始化函数，较早执行，应该userdefault设置默认项，如果不设，获取的没有设置过的key的结果都是0，
+//获取一个key对应的value，先查找配置文件，如果没有在默认项查找，如果没有配置默认项，返回0
+//默认项必须每次都启动都配置，否则不会生效。并且需要在调用userdefault之前就配置好，所以选择initialize中进行
++(void)initialize
+{
+    NSDictionary *dir = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:1] forKey:MAP_TYPE];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dir];
+}
+
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -58,8 +68,16 @@
     //    [self.mapView setMapType:MKMapTypeHybrid];
     //    [self.locationManger startUpdatingLocation];
     [self.control setSelectedSegmentIndex:type];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userChangeMap:) name:NSUserDefaultsDidChangeNotification object:nil];
 
 }
+
+-(void)userChangeMap:(NSNotification*)change
+{
+    NSLog(@"%@",change);
+}
+
 -(void)setMapType:(NSInteger)type
 {
     if (type == 0)
@@ -71,6 +89,7 @@
         [self.mapView setMapType:MKMapTypeHybrid];
     }
 }
+
 
 -(void)dealloc
 {
